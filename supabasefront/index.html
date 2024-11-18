@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product CRUD</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <h1>Product CRUD</h1>
+
+  <!-- Form to add product -->
+  <form id="add-product-form">
+    <h2>Add Product</h2>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="description">Description:</label>
+    <textarea id="description" name="description" required></textarea> <!-- New Description field -->
+
+    <label for="price">Price:</label>
+    <input type="number" id="price" name="price" required step="0.01">
+
+    <button type="submit">Add</button>
+  </form>
+
+  <!-- Form to update product -->
+  <form id="update-product-form">
+    <h2>Update Product</h2>
+    <input type="hidden" id="update-id" name="id">
+    <label for="update-name">Name:</label>
+    <input type="text" id="update-name" name="name" required>
+
+    <label for="update-description">Description:</label>
+    <textarea id="update-description" name="description" required></textarea> <!-- Update Description field -->
+
+    <label for="update-price">Price:</label>
+    <input type="number" id="update-price" name="price" required step="0.01">
+
+    <button type="submit">Update</button>
+  </form>
+
+  <!-- List of products -->
+  <ul id="products"></ul>
+
+  <script src="app.js"></script>
+  <script>
+    // Call fetchProducts() when the page loads
+    window.addEventListener('load', fetchProducts);
+  </script>
+</body>
+</html>

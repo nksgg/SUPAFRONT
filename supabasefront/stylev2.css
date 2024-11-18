@@ -1,0 +1,126 @@
+/* Estilo para o corpo da página */
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Estilo para o título da página */
+h1 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Estilo para a lista de produtos */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+li {
+  display: inline-block;
+  margin: 5px;
+  padding: 5px 10px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px #ccc;
+  width: 300px; /* Definir a largura dos itens da lista */
+  text-align: left; /* Alinhar o conteúdo à esquerda */
+}
+
+/* Estilo para a descrição do produto */
+li span {
+  display: block;
+  font-size: 0.9em;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+/* Estilo para os botões */
+button {
+  margin-left: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #3e8e41;
+}
+
+/* Estilo para os formulários */
+form {
+  margin-top: 20px;
+  text-align: center;
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px #ccc;
+}
+
+/* Estilo para os labels nos formulários */
+label {
+  display: inline-block;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+/* Estilo para os inputs de texto, número e a área de texto (textarea) */
+input[type="text"],
+input[type="number"],
+textarea {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 100%;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+/* Estilo para a área de texto (textarea) */
+textarea {
+  resize: vertical; /* Permite redimensionar a altura da área de texto */
+  min-height: 100px; /* Altura mínima da área de texto */
+}
+
+/* Estilo para os botões de submit */
+input[type="submit"],
+button[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Efeito de hover para o botão de submit */
+input[type="submit"]:hover,
+button[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+/* Remover as setas nos campos de número */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}

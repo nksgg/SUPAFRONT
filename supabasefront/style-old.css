@@ -1,0 +1,126 @@
+/* Estilo para o título da página */
+h1 {
+  text-align: center;
+  font-size: 2.5em;
+  color: #333;
+  margin-top: 20px;
+}
+
+/* Estilo para os formulários de adição e atualização de produtos */
+form {
+  margin-top: 30px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+/* Estilo dos labels dos campos dos formulários */
+form label {
+  display: block;
+  margin-bottom: 8px;
+  text-align: left;
+  font-size: 1.1em;
+  color: #333;
+}
+
+/* Estilo para os inputs de texto e número */
+form input[type="text"],
+form input[type="number"],
+form textarea {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 20px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Estilo para a área de texto (textarea) */
+form textarea {
+  resize: vertical; /* Permite redimensionar a altura */
+  min-height: 100px;
+}
+
+/* Estilo para o botão de envio dos formulários */
+form button {
+  background-color: #4CAF50; /* Cor verde */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+/* Efeito hover para o botão */
+form button:hover {
+  background-color: #45a049;
+}
+
+/* Estilo para a lista de produtos */
+#products {
+  margin-top: 50px;
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+}
+
+/* Estilo para os itens da lista de produtos */
+#products li {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  display: inline-block;
+  width: 300px;
+  text-align: left;
+  font-size: 1.1em;
+}
+
+#products li span {
+  display: block;
+  font-size: 0.9em;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+/* Botões de Delete e Update nos itens da lista */
+#products button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  font-size: 1em;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+/* Botão de Delete */
+#products button.delete {
+  background-color: #f44336; /* Cor vermelha */
+  color: white;
+}
+
+#products button.delete:hover {
+  background-color: #e53935;
+}
+
+/* Botão de Update */
+#products button.update {
+  background-color: #ff9800; /* Cor laranja */
+  color: white;
+}
+
+#products button.update:hover {
+  background-color: #fb8c00;
+}
+
